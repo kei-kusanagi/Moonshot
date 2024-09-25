@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0B949E662CA39A6D00D6D0E2 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B949E652CA39A6D00D6D0E2 /* Color-Theme.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0BB72E112CA1E025006C9F22 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B949E652CA39A6D00D6D0E2 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		0BB72E002CA1E023006C9F22 /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BB72E102CA1E025006C9F22 /* MoonshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BB72E1A2CA1E025006C9F22 /* MoonshotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonshotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +80,7 @@
 		0BB72DF72CA1E023006C9F22 = {
 			isa = PBXGroup;
 			children = (
+				0B949E652CA39A6D00D6D0E2 /* Color-Theme.swift */,
 				0BB72E022CA1E023006C9F22 /* Moonshot */,
 				0BB72E132CA1E025006C9F22 /* MoonshotTests */,
 				0BB72E1D2CA1E025006C9F22 /* MoonshotUITests */,
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B949E662CA39A6D00D6D0E2 /* Color-Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
