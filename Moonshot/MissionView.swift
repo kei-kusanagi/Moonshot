@@ -31,23 +31,10 @@ struct MissionView: View {
                     .frame(height: 2)
                     .foregroundStyle(.lightBackground)
                     .padding(.vertical)
-
-                VStack(alignment: .leading) {
-                    Text("Mission Highlights")
-                        .font(.title.bold())
-                        .padding(.bottom, 5)
-
-                    Text(mission.description)
-                    Rectangle()
-                        .frame(height: 2)
-                        .foregroundStyle(.lightBackground)
-                        .padding(.vertical)
-                    Text("Crew")
-                        .font(.title.bold())
-                        .padding(.bottom, 5)
-                }
-                .padding(.horizontal)
                 
+//                Text("Crew")
+//                    .font(.title.bold())
+//                    .padding(.bottom, 5)
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         ForEach(crew, id: \.role) { crewMember in
@@ -77,6 +64,22 @@ struct MissionView: View {
                         }
                     }
                 }
+                Rectangle()
+                    .frame(height: 2)
+                    .foregroundStyle(.lightBackground)
+                    .padding(.vertical)
+                
+                VStack(alignment: .leading) {
+                    Text("Mission Highlights")
+                        .font(.title.bold())
+                        .padding(.bottom, 5)
+
+                    Text(mission.description)
+                    
+                }
+                .padding(.horizontal)
+                
+
             }
             .padding(.bottom)
         }
