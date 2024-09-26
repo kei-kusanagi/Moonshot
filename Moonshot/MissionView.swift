@@ -20,13 +20,29 @@ struct MissionView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Image(mission.image)
-                    .resizable()
-                    .scaledToFit()
-                    .containerRelativeFrame(.horizontal) { width, axis in
-                        width * 0.6
+                ZStack {
+                    Image(mission.image)
+                        .resizable()
+                        .scaledToFit()
+                        .containerRelativeFrame(.horizontal) { width, axis in
+                            width * 0.6
+                        }
+                        .padding(.top)
+
+                    HStack {
+                        Spacer()
+                        VStack {
+                            Spacer()
+                            Text(mission.formattedLaunchDate)
+                                .font(.headline)
+                                .foregroundStyle(.white.opacity(0.5))
+                                .padding(.bottom, 0)
+                                .padding(.trailing, 10)
+                                
+                        }
                     }
-                    .padding(.top)
+                }
+                
                 Rectangle()
                     .frame(height: 2)
                     .foregroundStyle(.lightBackground)
@@ -104,6 +120,6 @@ struct MissionView: View {
     let missions: [Mission] = Bundle.main.decode("missions.json")
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
 
-    return MissionView(mission: missions[0], astronauts: astronauts)
+    return MissionView(mission: missions[1], astronauts: astronauts)
         .preferredColorScheme(.dark)
 }
