@@ -20,3 +20,6 @@ En este proyecto, vamos a crear una aplicación que permita a los usuarios apren
   <img src="https://github.com/user-attachments/assets/f05c984a-43de-4d34-a1de-dd47b91a01e5" alt="GuessTheFlag (1)" style="max-width: 100%; height: auto;">
 </p>
 
+# Desafio Day 46
+
+- Regresa al proyecto 8 (Moonshot) y actualízalo para que use NavigationLink(value:). Esto significa agregar conformidad a Hashable y pensar cuidadosamente cómo usar navigationDestination().
