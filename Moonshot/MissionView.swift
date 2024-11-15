@@ -28,6 +28,8 @@ struct MissionView: View {
                             width * 0.6
                         }
                         .padding(.top)
+//                        .accessibilityLabel("The mission badge for \(mission.displayName)")
+                        .accessibilityLabel(mission.badge)
 
                     HStack {
                         Spacer()
@@ -49,6 +51,7 @@ struct MissionView: View {
                     .padding(.vertical)
                 
                 CrewScrollView(crew: crew)
+                
                 
                 Rectangle()
                     .frame(height: 2)
@@ -111,6 +114,8 @@ struct CrewScrollView: View {
                                 Text(crewMember.astronaut.name)
                                     .foregroundStyle(.white)
                                     .font(.headline)
+                                    .accessibilityLabel(crewMember.astronaut.name.replacingOccurrences(of: ".", with: " "))
+
                                 Text(crewMember.role)
                                     .foregroundStyle(.white.opacity(0.5))
                             }
